@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexaCyber &mdash; Next-Gen Tech Gear</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Nexa<span>Cyber</span></a>
+      <ul class="nav__links">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#products" class="btn btn--sm">Shop Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <span class="badge">Next-Gen Tech Gear</span>
+      <h1 class="hero__title">Gear Up for the<br /><span>Digital Future</span></h1>
+      <p class="hero__sub">Premium tech accessories designed for the modern world. Minimal, powerful, built to last.</p>
+      <div class="hero__cta">
+        <a href="#products" class="btn">Browse Products</a>
+        <a href="#about" class="btn btn--outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__glow"></div>
+      <div class="hero__card"><div class="hero__card-icon">&#9889;</div><p>MagSafe Wallets</p></div>
+      <div class="hero__card hero__card--2"><div class="hero__card-icon">&#128274;</div><p>RFID Blocking</p></div>
+      <div class="hero__card hero__card--3"><div class="hero__card-icon">&#128167;</div><p>Waterproof</p></div>
+    </div>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <section class="features-bar">
+    <div class="features-bar__inner">
+      <div class="feature"><span>&#128666;</span><p>Free Shipping over $35</p></div>
+      <div class="feature"><span>&#128260;</span><p>30-Day Returns</p></div>
+      <div class="feature"><span>&#128737;</span><p>Secure Checkout</p></div>
+      <div class="feature"><span>&#11088;</span><p>Top Rated Products</p></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="section-header">
+      <h2>Our Products</h2>
+      <p>Handpicked tech essentials for everyday carry</p>
+    </div>
+    <div class="products__grid">
+
+      <div class="product-card">
+        <div class="product-card__img">
+          <div class="product-card__badge">Sale</div>
+          <div class="product-card__icon">&#128241;</div>
+        </div>
+        <div class="product-card__body">
+          <h3>MagSafe Wallet</h3>
+          <p>Magnetic snap-on wallet compatible with MagSafe iPhones. Holds up to 3 cards.</p>
+          <div class="product-card__price">
+            <span class="price">$19.99</span>
+            <span class="price--old">$54.00</span>
+          </div>
+          <a href="#contact" class="btn btn--full">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product-card product-card--featured">
+        <div class="product-card__img">
+          <div class="product-card__badge product-card__badge--hot">Hot</div>
+          <div class="product-card__icon">&#128179;</div>
+        </div>
+        <div class="product-card__body">
+          <h3>Smart Wallet Card Holder</h3>
+          <p>RFID-blocking slim card holder with auto-eject mechanism. Fits 6+ cards.</p>
+          <div class="product-card__price">
+            <span class="price">$15.99</span>
+            <span class="price--old">$29.99</span>
+          </div>
+          <a href="#contact" class="btn btn--full">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card__img">
+          <div class="product-card__badge">Sale</div>
+          <div class="product-card__icon">&#127754;</div>
+        </div>
+        <div class="product-card__body">
+          <h3>Waterproof Phone Case</h3>
+          <p>Universal waterproof case with full touchscreen access. IPX8 rated.</p>
+          <div class="product-card__price">
+            <span class="price">$24.30</span>
+          </div>
+          <a href="#contact" class="btn btn--full">Add to Cart</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__text">
+        <span class="badge">Who We Are</span>
+        <h2>Built for the<br />Next Generation</h2>
+        <p>NexaCyber was created to bring premium tech accessories to everyday people &mdash; no overpriced retail markups, just high-quality gear shipped straight to your door.</p>
+        <p style="margin-top:.75rem;">We source the best products globally and verify every item for quality before it reaches you.</p>
+        <a href="#products" class="btn" style="margin-top:1.5rem;display:inline-block;">Shop the Collection</a>
+      </div>
+      <div class="about__stats">
+        <div class="stat"><h3>500+</h3><p>Happy Customers</p></div>
+        <div class="stat"><h3>3</h3><p>Premium Products</p></div>
+        <div class="stat"><h3>100%</h3><p>Satisfaction Guarantee</p></div>
+        <div class="stat"><h3>30</h3><p>Day Return Policy</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <h2>Get in Touch</h2>
+      <p>Questions? We respond within 24 hours.</p>
+    </div>
+    <form class="contact__form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+      </div>
+      <input type="text" placeholder="Subject" />
+      <textarea rows="5" placeholder="Your message..."></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo" style="color:#93c5fd;">Nexa<span style="color:#fff;">Cyber</span></a>
+        <p>Premium tech accessories for the modern world.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 NexaCyber. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
